@@ -7,6 +7,7 @@
   <title>Thheedle Tandem</title>
   <link rel="stylesheet" href="./meyer-reset.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./icon.png">
 </head>
 <body>
   <div class="hero container">
@@ -29,31 +30,31 @@
         <div class="main input row">
           <div class="input-container">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name">
+            <input type="text" id="first-name" placeholder=" " required>
           </div>
           <div class="input-container">
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name">
+            <input type="text" id="last-name" placeholder=" " required>
           </div>
         </div>
         <div class="main input row">
           <div class="input-container">
             <label for="email">Email</label>
-            <input type="email" id="email">
+            <input type="email" id="email" placeholder=" " required>
           </div>
           <div class="input-container">
             <label for="phone-number">Phone Number</label>
-            <input type="tel" id="phone-number">
+            <input type="tel" id="phone-number" placeholder=" " pattern="\d{10}|\d{3}-\d{3}-\d{4}|\(\d{3}\)-\d{3}-\d{4}" required>
           </div>
         </div>
         <div class="main input row">
           <div class="input-container">
             <label for="password">Password</label>
-            <input type="password" id="password">
+            <input type="password" id="password" placeholder=" " required>
           </div>
           <div class="input-container">
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password">
+            <input type="password" id="confirm-password" placeholder=" " required>
           </div>
         </div>
       </form>

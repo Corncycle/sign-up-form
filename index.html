@@ -13,7 +13,7 @@
     <div class="hero-overlay container">
       <img src="./thheedle-logo.png" alt="thheedle logo">
       <span class="hero-overlay-text container">
-        <span class="hero-overlay-text caption">Thheedle</span>
+        <span class="hero-overlay-text caption">thheedle</span>
         <h1 class="hero-overlay-text title">Tandem</h1>
       </div>
     </div>
@@ -25,7 +25,7 @@
     </header>
     <main class="container">
       <h2 class="main title">Let's do this!</h2>
-      <form action="post">
+      <form id="main-form" class="container" action="post">
         <div class="main input row">
           <div class="input-container">
             <label for="first-name">First Name</label>
@@ -39,27 +39,27 @@
         <div class="main input row">
           <div class="input-container">
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input type="email" id="email">
           </div>
           <div class="input-container">
             <label for="phone-number">Phone Number</label>
-            <input type="text" id="phone-number">
+            <input type="tel" id="phone-number">
           </div>
         </div>
         <div class="main input row">
           <div class="input-container">
             <label for="password">Password</label>
-            <input type="text" id="password">
+            <input type="password" id="password">
           </div>
           <div class="input-container">
             <label for="confirm-password">Confirm Password</label>
-            <input type="text" id="confirm-password">
+            <input type="password" id="confirm-password">
           </div>
         </div>
       </form>
     </main>
     <footer class="container">
-      <button type="submit">Create Account</button>
+      <button form="main-form" type="submit">Create Account</button>
       <p>Already have an account? <a href="#">Log in</a></p>
     </footer>
   </div>

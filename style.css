@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,11 +6,28 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, header, main, footer, span {
+    cursor: default;
 }
 
 img {
     width: 80px;
     height: auto;
+    filter: drop-shadow(0px 0px 4px #bebebe);
+    pointer-events: none;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #105f66;
+}
+
+a:active {
+    color: #dd3c31;
 }
 
 body {
@@ -22,7 +39,7 @@ body>.hero.container {
 }
 
 body>.content.container {
-    flex: 1.5;
+    flex: 1.7;
 }
 
 .container, body, .main.input.row, .input-container {
@@ -35,6 +52,7 @@ header.container,
 main.container,
 .content.container,
 .input-container,
+form.container,
 footer.container {
     flex-direction: column;
 }
@@ -43,13 +61,14 @@ footer.container {
     background: url("./background-flipped.jpg");
     background-size: auto 150%;
     background-position: center;
+    z-index: 1;
 }
 
 .hero-overlay.container {
     margin-top: 25vh;
     background: rgba(255, 255, 255, 0.6);
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     gap: 1rem;
 }
 
@@ -59,6 +78,7 @@ footer.container {
 
 .hero-overlay-text.caption {
     font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .hero-overlay-text.title {
@@ -68,8 +88,97 @@ footer.container {
 
 .content.container {
     justify-content: center;
+    background: rgb(252, 252, 246);
 }
 
 .content.container>* {
-    padding: 0 40px;
+    padding: 20px 40px;
+    padding-right: clamp(40px, calc(50% - 230px), 200px);
+}
+
+.content>header.container {
+    padding-bottom: 60px;
+}
+
+header {
+    gap: 1.5rem;
+}
+
+header>p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main.container {
+    background: rgb(255, 255, 251);
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.096);
+    gap: 20px;
+}
+
+.main.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+form {
+    gap: 30px;
+}
+
+.main.input.row {
+    gap: clamp(20px, calc(20% - 60px), 40px);
+}
+
+.input-container {
+    gap: 3px;
+    flex: 1;
+    max-width: 250px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+input {
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #d1d4d8;
+    width: 100%
+}
+
+input:focus, input:focus-visible {
+    outline: 1px solid rgb(109, 156, 255);
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.096);
+}
+
+.content>footer.container {
+    padding-top: 30px;
+    gap: 20px;
+}
+
+footer>p {
+    font-weight: 300;
+}
+
+button {
+    position: relative;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 9px;
+    width: 230px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #105f66;
+    border: 3px solid #105f66;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #105f66;
 }

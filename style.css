@@ -191,3 +191,36 @@ button:hover {
     background-color: white;
     color: #105f66;
 }
+
+@media only screen and (max-width: 700px) {
+    body, 
+    .main.input.row {
+        flex-direction: column;
+    }
+
+    .hero.container {
+        background-size: 150% auto;
+    }
+
+    .hero-overlay.container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content.container>* {
+        padding-right: 40px;
+    }
+
+    .content>header.container {
+        padding-bottom: 20px;
+    }
+
+    .main.input.row {
+        gap: 30px;
+    }
+
+    footer {
+        justify-content: center;
+        align-items: center;
+    }
+}

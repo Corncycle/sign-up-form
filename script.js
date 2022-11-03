@@ -11,10 +11,6 @@ function ensureEqualPasswords() {
     console.log(confirmPasswordInput.validity.valid);
 }
 
-passwordInput.addEventListener("input", (e) => {
-    //ensureEqualPasswords();
-});
-
 confirmPasswordInput.addEventListener("input", (e) => {
     ensureEqualPasswords();
 });

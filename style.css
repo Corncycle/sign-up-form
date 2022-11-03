@@ -62,6 +62,7 @@ footer.container {
     background-size: auto 150%;
     background-position: center;
     z-index: 1;
+    justify-content: space-between;
 }
 
 .hero-overlay.container {
@@ -84,6 +85,20 @@ footer.container {
 .hero-overlay-text.title {
     font-size: 3.5rem;
     font-weight: 900;
+}
+
+.hero-footer {
+    background: rgba(255, 255, 255, 0.397);
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    justify-content: center;
+    padding: 8px;
+}
+
+.hero-footer-text>a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
 }
 
 .content.container {
@@ -192,7 +207,7 @@ button:hover {
     color: #105f66;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 706px) {
     body, 
     .main.input.row {
         flex-direction: column;
@@ -207,6 +222,10 @@ button:hover {
         margin-bottom: 20px;
     }
 
+    .hero-footer {
+        display: none;
+    }
+
     .content.container>* {
         padding-right: 40px;
     }
@@ -217,6 +236,10 @@ button:hover {
 
     .main.input.row {
         gap: 30px;
+    }
+
+    .input-container {
+        max-width: none;
     }
 
     footer {

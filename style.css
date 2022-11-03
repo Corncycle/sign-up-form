@@ -1,4 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
 img {
-    width: 100px;
+    width: 80px;
     height: auto;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body>.hero.container {
+    flex: 1;
+}
+
+body>.content.container {
+    flex: 1.5;
+}
+
+.container, body, .main.input.row, .input-container {
+    display: flex;
+}
+
+.hero.container,
+.hero-overlay-text.container,
+header.container,
+main.container,
+.content.container,
+.input-container,
+footer.container {
+    flex-direction: column;
+}
+
+.hero.container {
+    background: url("./background-flipped.jpg");
+    background-size: auto 150%;
+    background-position: center;
+}
+
+.hero-overlay.container {
+    margin-top: 25vh;
+    background: rgba(255, 255, 255, 0.6);
+    justify-content: center;
+    padding: 10px 0;
+    gap: 1rem;
+}
+
+.hero-overlay-text.container {
+    justify-content: center;
+}
+
+.hero-overlay-text.caption {
+    font-weight: 300;
+}
+
+.hero-overlay-text.title {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.content.container {
+    justify-content: center;
+}
+
+.content.container>* {
+    padding: 0 40px;
 }
